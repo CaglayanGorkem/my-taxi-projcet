@@ -7,3 +7,78 @@
 html{
     font-size: 10px;
 }
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container{
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* navbar */
+
+nav{
+    font-family: Montserrat;
+    background-color: #333;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#logo-box{
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+#nav-links{
+    float: right;
+}
+
+#nav-links .nav-item{
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    letter-spacing: 0.1rem;
+    padding: 1.6rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover{
+    color: #FDB813;
+}
+
+#logo-box .logo:hover{
+    transition: color 0.4s;
+    color: #FDB813;
+}
