@@ -143,7 +143,7 @@ header h1{
 /* section */
 
 #section{
-height: 800px;
+height: 1000px;
 padding-top: 10rem;
 padding-bottom: 10rem;
 text-align: center;
@@ -187,4 +187,11 @@ background-color: lightgray;
 .resim-ayarla{
     max-width: 100%;
     height: auto;
+}
+
+.bilgi{
+    background-color: #eaeaea;
+    width: auto;
+    height: 70px;
+    text-align: left;
 }
