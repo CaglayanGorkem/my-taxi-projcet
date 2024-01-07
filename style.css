@@ -13,7 +13,7 @@ body{
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: black;
+    background-color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -27,6 +27,12 @@ a{
 
 ul {
     list-style-type: none;
+}
+
+section{
+padding-top: 10rem;
+padding-bottom: 10rem;
+text-align: center;
 }
 
 .img-t{
@@ -142,13 +148,7 @@ header h1{
 
 /* section */
 
-#section{
-height: 1000px;
-padding-top: 10rem;
-padding-bottom: 10rem;
-text-align: center;
-background-color: lightgray;
-}
+
 
 #section h2{
     font-size: 4.8rem;
@@ -172,7 +172,7 @@ background-color: lightgray;
     font-size: 3.2rem;
     top: -28px;
     position: relative;
-    background-color: lightgray;
+    background-color: #fff;
     padding: 0 8px;
 }
 
@@ -187,6 +187,7 @@ background-color: lightgray;
 .resim-ayarla{
     max-width: 100%;
     height: auto;
+    border-radius: 13px;
 }
 
 .bilgi{
@@ -194,4 +195,37 @@ background-color: lightgray;
     width: auto;
     height: 70px;
     text-align: left;
+    border-radius: 13px;
+    font-size: 1.6rem;
+}
+
+#about{
+    background-color: #FDB813;
+    color: #000;
+}
+
+#about h2{
+    font-size: 4.8rem;
+}
+
+#about-text {
+    text-align: left;
+}
+
+#about-text .left {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+
+#about-text .right {
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+}
+
+#about-text .text {
+    font-size: 2rem;
 }
