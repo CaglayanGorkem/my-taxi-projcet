@@ -1,0 +1,8 @@
+CREATE SCHEMA `kayit` DEFAULT CHARACTER SET utf8 ;
+
+CREATE TABLE `kayit`.`users` (
+  `user_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `user_password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`user_id`));
