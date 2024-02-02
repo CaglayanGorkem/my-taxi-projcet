@@ -45,8 +45,8 @@ if(isset($_POST['kayit'])){
 }
 
 if(isset($_POST['giris'])){
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
 
     if(!$username){
         echo "kullanıcı adınızı giriniz"
@@ -72,4 +72,36 @@ if(isset($_POST['giris'])){
     }
 }
 
+/*mesaj ileti bölümü*/ 
+if(isset($_POST['gonder']))
+{
+    $username = trim($_POST['username']);
+    $message = $_POST['message'];
+
+    if(!$username)
+    {
+        echo "Lütfen kullanıcı adınızı giriniz";
+    } 
+
+    elseif(!$message)
+    {
+        echo "Lütfen mesajınızı giriniz giriniz";
+    }
+    else
+    {
+        $sorgu = $db->prepare('INSERT INTO mesaj SET user_name = ?, contact = ?');
+        $ekle = $sorgu->execute([
+            $username, $message
+        ]);
+        if($ekle)
+        {
+            echo "Mesajınız başarıyla iletildi";
+        }
+        else
+        {
+            echo "bir hata oluştu, tekrar kontrol ediniz";
+        }
+    }
+
+}
 ?>

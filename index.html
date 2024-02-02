@@ -195,25 +195,17 @@
                 iletişime gec
             </h2>
             <hr class="section-icon">
-            <form action="" id="contact-form">
+            <form action="islem.php" method="post" id="contact-form">
 
                 <div class="form-group">
-                    <input type="text" id="name" placeholder="İsim vs Soyisim giriniz">
+                    <input name="username" type="text" id="username" placeholder="Kullanıcı adını giriniz">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="gmail" placeholder="Email giriniz">
+                   <textarea name="message" id="message" rows="5" placeholder="Mesajınızı giriniz 255 karakteri geçmesin"></textarea>
                 </div>
 
-                <div class="form-group">
-                    <input type="text" id="number" placeholder="Telefon numaranızı giriniz">
-                </div>
-
-                <div class="form-group">
-                   <textarea name="" id="message" rows="5" placeholder="Mesajınızı giriniz"></textarea>
-                </div>
-
-                <button class="btn">
+                <button name="gonder" class="btn">
                     Gönder
                 </button>
 
